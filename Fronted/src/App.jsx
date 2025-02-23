@@ -1,9 +1,10 @@
 import React from 'react'
+import Profile from './Page'
 
 const App = () => {
   return (
     <>
-    <div>App</div>
+    <div><Profile/></div>
     </>
   )
 }
