@@ -1,9 +1,9 @@
-import Profile from './Page'
+import Login from './Pages/Login/Login'
 
 const App = () => {
   return (
     <>
-    <div><Profile/></div>
+    <div><Login/></div>
     </>
   )
 }
