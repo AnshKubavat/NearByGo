@@ -1,25 +1,27 @@
 export default function Signup() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#FDF8F2] p-4">
-      <div className="flex w-full max-w-4xl bg-white shadow-lg rounded-2xl overflow-hidden">
-        {/* Left Side */}
-        <div className="hidden md:flex flex-1 bg-[#FBE8D3] items-center justify-center p-10">
-          <img
-            src='signup.png'
-            alt="image"
-            className="w-80 h-auto object-cover"
-          />
-        </div>
+    <div className="flex min-h-screen items-center justify-center bg-[#fdf5ee] p-6">
+      <div className="flex w-full max-w-4xl bg-white shadow-lg rounded-2xl overflow-hidden p-10">
+      {/* Left Side with Illustration and Background Shape */}
+      <div className="hidden md:flex flex-1 items-center justify-center relative">
+        {/* Background Shape */}
+        <div className="absolute w-80 h-full bg-[#fbe2cf] rounded-t-full top-0 left-0 right-0 mx-auto z-0"></div>
+        {/* Illustration */}
+        <img
+          src="signup.png" // Ensure this file is in the public folder if using Next.js
+          alt="Illustration"
+          className="relative w-72 h-auto z-10"
+        />
+      </div>
 
-        {/* Right Side (Form) */}
-        <div className="flex-1 p-10">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Create Account</h2>
-          <form className="space-y-5">
-            
-            <div>
-              <label className="block text-gray-600 mb-2">Username</label>
-              <div className="relative">
-                <input
+         {/* Right Side (Form) */}
+         <div className="flex-1 p-10">
+           <h2 className="text-2xl font-bold text-gray-800 mb-6">Create Account</h2>
+           <form className="space-y-5">
+                        <div>
+            <label className="block text-gray-600 mb-2">Username</label>
+               <div className="relative">
+                 <input
                   type="text"
                   placeholder="Enter your Name"
                   className="w-full p-3 pl-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
